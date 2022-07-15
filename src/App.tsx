@@ -4,6 +4,7 @@ import Description from './Components/Description/Description';
 import Header from './Components/Header/Header';
 import WeatherDisplay from './Components/WeatherDisplay/WeatherDisplay';
 import {useEffect, useState} from 'react';
+import Input from './Components/Input/Input';
 
 
 function App() {
@@ -24,18 +25,22 @@ function App() {
       speed:0
     }
   }
+  const [input, setInput] = useState("")
+  const [city, setCity] = useState("")
+  console.log(city)
+
   const [weatherData, setWeatherData] = useState(data)
   console.log(weatherData)
   useEffect(()=> {  
      async function getWeatherData () {
-      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${process.env.KEY}`);
+      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8aba6173163790333e212dc3935b4c03`);
       const answer = await result.json();
       console.log(answer);
       setWeatherData(answer);
     }
     getWeatherData()
     console.log(weatherData)
-  }, [weatherData] )
+  }, [] )
 
   //set up state
   // - import useState +++
@@ -51,6 +56,7 @@ function App() {
   return (
     
     <div className="App">
+      <Input text={setCity}/>
       <Header city={weatherData.name}/>
       <WeatherDisplay icon={weatherData.weather[0].icon} temp={weatherData.main.temp}  feelsLike={weatherData.main.feels_like} windspeed={weatherData.wind.speed}/>
       <Description text={weatherData.weather[0].description}/>
