@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header city={"London"}/>
-      <WeatherDisplay/>
+      <WeatherDisplay icon="icon" temp="12"  feelsLike="90" windspeed="75845784km"/>
     </div>
   );
 }

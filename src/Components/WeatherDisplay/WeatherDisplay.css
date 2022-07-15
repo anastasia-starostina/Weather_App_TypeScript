@@ -4,5 +4,17 @@
             font-size: 24px;
             display: flex;
             justify-content: center;
+            flex-direction: row;
             width: 50%;
+}
+
+.picture {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    flex-wrap: wrap;
+    border: solid 2px black;
 }
