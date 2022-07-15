@@ -8,8 +8,8 @@ type HeadingProps = {
 function Header (props:HeadingProps){
 
     return (
-        
-        <h1>{props.city}</h1>
+      
+        <h1 className="locationContainer">{props.city}</h1>
         
     )
 }
