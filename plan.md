@@ -33,4 +33,8 @@ Decide on components and make component tree. - Header for location - body displ
         - 11:15 - 12:30 coding
 
         Afternoon
-        -
+        - 1.30 - 2.00 - Sort out fetch request and pass response to props.
+        - 2.00 - 2.30 - Sort Out CSS
+        - 3.00 - 3.15 - Sort out DOCS
+        - 3.15 - 4.00 - STRETCH GOALS
+       
