@@ -12,10 +12,17 @@ function App() {
     name: "",
     weather: [
       {
-        icon: ""
+        icon: "",
+        description:""
       }
     ], 
-    
+    main:{
+      temp:0,
+      feels_like:0
+    },
+    wind:{
+      speed:0
+    }
   }
   const [weatherData, setWeatherData] = useState(data)
   console.log(weatherData)
@@ -45,8 +52,8 @@ function App() {
     
     <div className="App">
       <Header city={weatherData.name}/>
-      <WeatherDisplay icon={weatherData.weather[0].icon} temp="12"  feelsLike="90" windspeed="75845784km"/>
-      <Description text={"London sdfdsfdsfdsfdsfsf"}/>
+      <WeatherDisplay icon={weatherData.weather[0].icon} temp={weatherData.main.temp}  feelsLike={weatherData.main.feels_like} windspeed={weatherData.wind.speed}/>
+      <Description text={weatherData.weather[0].description}/>
     </div>
   );
 }
