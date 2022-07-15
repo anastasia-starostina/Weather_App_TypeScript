@@ -5,17 +5,30 @@ import Header from './Components/Header/Header';
 import WeatherDisplay from './Components/WeatherDisplay/WeatherDisplay';
 import {useEffect, useState} from 'react';
 
+
 function App() {
-  const [weather, setWeather] = useState(null)
-  useEffect(()=> {   
+
+  let data = {
+    name: "",
+    weather: [
+      {
+        icon: ""
+      }
+    ], 
+    
+  }
+  const [weatherData, setWeatherData] = useState(data)
+  console.log(weatherData)
+  useEffect(()=> {  
      async function getWeatherData () {
       const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=c157dcda079f751cecec21e6da384c39`);
       const answer = await result.json();
       console.log(answer);
-      setWeather(answer);
+      setWeatherData(answer);
     }
     getWeatherData()
-  },[] )
+    console.log(weatherData)
+  }, [weatherData] )
 
   //set up state
   // - import useState +++
@@ -31,8 +44,8 @@ function App() {
   return (
     
     <div className="App">
-      <Header city={"London"}/>
-      <WeatherDisplay icon="icon" temp="12"  feelsLike="90" windspeed="75845784km"/>
+      <Header city={weatherData.name}/>
+      <WeatherDisplay icon={weatherData.weather[0].icon} temp="12"  feelsLike="90" windspeed="75845784km"/>
       <Description text={"London sdfdsfdsfdsfdsfsf"}/>
     </div>
   );
