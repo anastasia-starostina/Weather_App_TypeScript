@@ -28,7 +28,7 @@ function App() {
   console.log(weatherData)
   useEffect(()=> {  
      async function getWeatherData () {
-      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=c157dcda079f751cecec21e6da384c39`);
+      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${process.env.KEY}`);
       const answer = await result.json();
       console.log(answer);
       setWeatherData(answer);
