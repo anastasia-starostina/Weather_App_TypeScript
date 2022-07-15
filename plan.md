@@ -1,4 +1,4 @@
-MVP 
+MVP
 
 Typescript on eplace app fetching data for London to start with..
 
@@ -17,22 +17,20 @@ API Plan. - FETCH
            - current.feels_like
            - current.wind_speed
 
-Decide on components and make component tree.
-        - Header for location 
-        - body display for the weather data. 
+Decide on components and make component tree. - Header for location - body display for the weather data.
 
         STRETCH - multipile location temp in header.
                 - change location/timezone/language
 
         PLAN FOR THE DAY
 
-        Morning 
+        Morning
         - 9:10 - 10:00 planning & see if API works
-        - 10:00 - 10:20 component tree
-        - 10:20 - 10:40 low-fi/ medium-fi wireframe
+        - 10:00 - 10:20 component tree +++
+        - 10:20 - 10:40 low-fi/ medium-fi wireframe +++
         - 10:40 - 11:00 start renering components
         - 11:00 - 11:15 break
-        - 11:15 - 12:30 coding 
+        - 11:15 - 12:30 coding
 
         Afternoon
-        - 
+        -
