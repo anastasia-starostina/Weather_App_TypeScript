@@ -28,14 +28,14 @@ function App() {
   console.log(weatherData)
   useEffect(()=> {  
      async function getWeatherData () {
-      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${process.env.KEY}`);
+      const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8aba6173163790333e212dc3935b4c03`);
       const answer = await result.json();
       console.log(answer);
       setWeatherData(answer);
     }
     getWeatherData()
     console.log(weatherData)
-  }, [weatherData] )
+  }, [] )
 
   //set up state
   // - import useState +++
