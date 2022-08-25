@@ -76,8 +76,8 @@ function App() {
   return (
     
     <div className="App">
-      <Button onClick={submitCity}/>
       <Input text={setCity}/>
+      <Button onClick={submitCity}/>
       <Header city={weatherData.name}/>
       <WeatherDisplay icon={weatherData.weather[0].icon} temp={weatherData.main.temp}  feelsLike={weatherData.main.feels_like} windspeed={weatherData.wind.speed}/>
       <Description text={weatherData.weather[0].description}/>

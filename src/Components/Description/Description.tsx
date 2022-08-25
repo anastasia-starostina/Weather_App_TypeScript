@@ -7,7 +7,7 @@ type DescriptionProps = {
 function Description (props :DescriptionProps){
     return(
     <section className="descriptionContainer">
-        <h1 className="descriptionTitle"> The Low Down</h1>
+        <h1 className="descriptionTitle"> Weather Now</h1>
         <p className="descriptionContent">{props.text}</p>
     </section>
     )

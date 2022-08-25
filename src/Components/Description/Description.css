@@ -1,15 +1,23 @@
-.descriptionContainer{
-    background-color: gray;
-    border-radius: 10px;
-    display:flex;
-    justify-content: center;
-    width: 50%;
+.descriptionContainer {
+  background-color: gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.345);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 24px 32px;
+  margin: 16px 0 0 0
 }
 
-.descriptionTitle{
-    font-size: 24px;
+.descriptionTitle {
+  font-size: 24px;
 }
 
-.descriptionContent{
-    font-size: 12px;
+.descriptionContent {
+  font-size: 12px;
 }

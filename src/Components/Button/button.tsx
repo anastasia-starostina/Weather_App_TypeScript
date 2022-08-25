@@ -1,6 +1,5 @@
 import { AnySrvRecord } from "dns"
-
-
+import './Button.css'
 
 type buttonProps = {
     onClick: any

@@ -1,3 +1,4 @@
+import '../Input/Input.css'
 
 type InputProps = {
     text: React.Dispatch<React.SetStateAction<string>>
