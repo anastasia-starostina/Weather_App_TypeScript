@@ -12,7 +12,8 @@ input {
   -webkit-backdrop-filter: blur(4.9px);
   border: 1px solid rgba(255, 255, 255, 0.11);
   display: flex;
-  margin: 5vh 0 1vh 0;
+  margin: 5vh 2vh 5vh 0;
+  height:5vh;
   
 }
 
