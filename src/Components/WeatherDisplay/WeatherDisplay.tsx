@@ -1,5 +1,6 @@
 import DataDisplay from "./Displays/DataDisplay";
 import "./WeatherDisplay.css";
+import {useState, useEffect} from 'react'
 
 type displayProps = {
   id?: string;
@@ -9,11 +10,12 @@ type displayProps = {
   windspeed: any;
 };
 
+
 function WeatherDisplay(props: displayProps) {
   return (
     <div className="displayContainer">
       <section className="picture">
-        <DataDisplay id="iconDisplay" display={props.icon} />
+        <img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt='Weather Icon'/>
       </section>
       <section className="data">
         <h5>Temperature</h5>
