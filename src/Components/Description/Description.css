@@ -19,5 +19,7 @@
 }
 
 .descriptionContent {
-  font-size: 12px;
+  font-size: 24px;
+  margin: auto;
+   color: rgb(128, 91, 128);
 }

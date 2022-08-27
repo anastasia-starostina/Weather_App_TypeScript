@@ -14,9 +14,11 @@ type displayProps = {
 function WeatherDisplay(props: displayProps) {
   return (
     <div className="displayContainer">
-      <section className="picture">
-        <img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt='Weather Icon'/>
-      </section>
+        <img
+          className="picture"
+          src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}
+          alt="Weather Icon"
+        />
       <section className="data">
         <h5>Temperature</h5>
         <DataDisplay id="tempDisplay" display={props.temp} />

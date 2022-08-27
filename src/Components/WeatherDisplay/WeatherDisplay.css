@@ -15,11 +15,12 @@
 }
 
 .picture {
-  width: 20%;
-  justify-content: center;
-  align-items: center;
+  width: 35vh;
+  height: 30vh;
+  margin: auto;
 }
 
 .data {
   flex-wrap: wrap;
+  width: 50%;
 }

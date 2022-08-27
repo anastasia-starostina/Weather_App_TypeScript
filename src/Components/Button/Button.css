@@ -1,8 +1,6 @@
 button {
-  height: 10vh;
-  margin-top: 2vh;
+  height: 5vh;
   display: inline-block;
-  padding: 24px 32px;
   border: 0;
   text-decoration: none;
   border-radius: 15px;
@@ -14,6 +12,7 @@ button {
   letter-spacing: 2px;
   cursor: pointer;
   text-transform: uppercase;
+  margin-right: 5vh;git
 }
 
 button:hover {

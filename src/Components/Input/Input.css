@@ -1,6 +1,6 @@
 input {
-  border-radius: 5px;
-  width: 25vh;
+  margin:auto;
+  width: 50%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.9px);
   -webkit-backdrop-filter: blur(4.9px);
@@ -12,12 +12,11 @@ input {
   -webkit-backdrop-filter: blur(4.9px);
   border: 1px solid rgba(255, 255, 255, 0.11);
   display: flex;
-  margin: 5vh 2vh 5vh 0;
-  height:5vh;
-  
+  margin:auto;
+
 }
 
 ::placeholder {
-    color: rgb(63, 51, 140);
+    color: rgb(97, 61, 97);
 
 }
