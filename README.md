@@ -27,6 +27,14 @@ At the moment the app takes input from the user, fetches data from the API and d
 - Wind speed 💨
 - Weather description 🛰️
 
+
+## Tech Stack
+
+- TypeScript
+- React
+- HTML
+- CSS
+
 ## Challenges
 
 We faced a few challenges in this project:
